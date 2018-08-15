@@ -21,9 +21,37 @@ webmention-cli is developed using Ruby 2.4.4 and is additionally tested against 
 gem install webmention-cli
 ```
 
+## Usage
+
+webmention-cli makes available the following commands:
+
+### `webmention endpoint <url>`
+
+Discover the webmention endpoint for the given `<url>` using the [webmention-endpoint-ruby](https://github.com/jgarber623/webmention-endpoint-ruby) gem's endpoint discovery.
+
+```sh
+$ webmention endpoint https://sixtwothree.org
+https://sixtwothree.org/webmentions
+```
+
+### `webmention verify <source> <target>`
+
+Confirm whether or not a `<source>` URL links to the given `<target>` URL using the [webmention-verification-ruby](https://github.com/jgarber623/webmention-verification-ruby) gem's verifers.
+
+```sh
+$ webmention verify https://kartikprabhu.com/notes/re-launching-franciscms https://sixtwothree.org/posts/launching-franciscms-onto-the-indieweb
+SUCCESS: https://kartikprabhu.com/notes/re-launching-franciscms links to https://sixtwothree.org/posts/launching-franciscms-onto-the-indieweb
+```
+
 ## Contributing
 
 Interested in helping improve webmention-cli? Awesome! Your help is greatly appreciated. See [CONTRIBUTING.md](https://github.com/jgarber623/webmention-cli/blob/master/CONTRIBUTING.md) for details.
+
+## Acknowledgments
+
+webmention-cli wouldn't exist without Webmention and the hard work put in by everyone involved in the [IndieWeb](https://indieweb.org) movement.
+
+webmention-cli is written and maintained by [Jason Garber](https://sixtwothree.org).
 
 ## License
 
