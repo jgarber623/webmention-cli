@@ -43,6 +43,13 @@ $ webmention verify https://kartikprabhu.com/notes/re-launching-franciscms https
 SUCCESS: https://kartikprabhu.com/notes/re-launching-franciscms links to https://sixtwothree.org/posts/launching-franciscms-onto-the-indieweb
 ```
 
+By default, the `verify` command will strictly match URLs. For a bit more flexibility, use the `--no-strict` flag:
+
+```sh
+$ webmention verify https://aaronparecki.com/2014/12/17/5/webmention-indieweb https://sixtwothree.org/posts/open-sourcing-my-webmention-service --no-strict
+SUCCESS: https://aaronparecki.com/2014/12/17/5/webmention-indieweb links to https://sixtwothree.org/posts/open-sourcing-my-webmention-service
+```
+
 ## Contributing
 
 Interested in helping improve webmention-cli? Awesome! Your help is greatly appreciated. See [CONTRIBUTING.md](https://github.com/jgarber623/webmention-cli/blob/master/CONTRIBUTING.md) for details.
