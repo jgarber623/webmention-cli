@@ -22,8 +22,9 @@ module WebmentionCLI
     # end
 
     desc 'verify <source> <target>', 'Verify <source> URL links to <target> URL'
+    option :strict, type: :boolean, desc: 'Enable or disable strict URL matching', default: true
     def verify(source, target)
-      result = ::Webmention::Verification.verified?(source, target)
+      result = ::Webmention::Verification::Client.new(source, target, strict: options[:strict]).verified?
 
       if result
         puts "SUCCESS: #{source} links to #{target}"
