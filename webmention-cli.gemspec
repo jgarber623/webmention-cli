@@ -32,5 +32,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'thor', '~> 0.20.3'
   spec.add_runtime_dependency 'webmention-endpoint', '~> 2.0'
-  spec.add_runtime_dependency 'webmention-verification', '~> 0.1.1'
+  spec.add_runtime_dependency 'webmention-verification', '~> 0.1.2'
 end
