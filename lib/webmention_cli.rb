@@ -1,6 +1,6 @@
 require 'thor'
-require 'webmention/endpoint'
+require 'indieweb/endpoints'
 require 'webmention/verification'
 
 require 'webmention_cli/version'
-require 'webmention_cli/webmention'
+require 'webmention_cli/cli'
