@@ -6,7 +6,7 @@ module WebmentionCLI
 
     desc 'endpoint <url>', 'Discover webmention endpoint for <url>'
     def endpoint(url)
-      endpoint_url = IndieWeb::Endpoints.get(url)[:webmention]
+      endpoint_url = IndieWeb::Endpoints.get(url).webmention
 
       puts endpoint_url if endpoint_url
 
