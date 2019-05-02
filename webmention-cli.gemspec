@@ -3,7 +3,6 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'webmention_cli/version'
 
-# rubocop:disable Metrics/BlockLength
 Gem::Specification.new do |spec|
   spec.required_ruby_version = ['>= 2.4', '< 2.7']
 
@@ -41,4 +40,3 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'thor', '~> 0.20.3'
   spec.add_runtime_dependency 'webmention-verification', '~> 1.1'
 end
-# rubocop:enable Metrics/BlockLength
