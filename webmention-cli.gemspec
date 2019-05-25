@@ -34,7 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop-performance', '~> 1.2'
   spec.add_development_dependency 'rubocop-rspec', '~> 1.32'
   spec.add_development_dependency 'simplecov', '~> 0.16.1'
-  spec.add_development_dependency 'simplecov-console', '~> 0.4.2'
+  spec.add_development_dependency 'simplecov-console', '~> 0.5.0'
 
   spec.add_runtime_dependency 'indieweb-endpoints', '~> 0.5.0'
   spec.add_runtime_dependency 'thor', '~> 0.20.3'
