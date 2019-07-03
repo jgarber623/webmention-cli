@@ -1,4 +1,5 @@
 require 'simplecov'
+require 'webmock/rspec'
 
 require 'webmention_cli'
 
