@@ -13,6 +13,10 @@ Metrics/BlockLength:
 Metrics/LineLength:
   Enabled: false
 
+Naming/FileName:
+  Exclude:
+    - lib/webmention-cli.rb
+
 Style/Documentation:
   Enabled: false
 
