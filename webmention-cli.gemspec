@@ -27,17 +27,17 @@ Gem::Specification.new do |spec|
     'changelog_uri'   => "#{spec.homepage}/blob/v#{spec.version}/CHANGELOG.md"
   }
 
-  spec.add_development_dependency 'rake', '~> 12.3'
-  spec.add_development_dependency 'reek', '~> 5.4'
-  spec.add_development_dependency 'rspec', '~> 3.8'
-  spec.add_development_dependency 'rubocop', '~> 0.72.0'
-  spec.add_development_dependency 'rubocop-performance', '~> 1.4'
-  spec.add_development_dependency 'rubocop-rspec', '~> 1.33'
-  spec.add_development_dependency 'simplecov', '~> 0.18.1'
-  spec.add_development_dependency 'simplecov-console', '~> 0.5.0'
-  spec.add_development_dependency 'webmock', '~> 3.6'
+  spec.add_development_dependency 'rake', '~> 13.0'
+  spec.add_development_dependency 'reek', '~> 5.6'
+  spec.add_development_dependency 'rspec', '~> 3.9'
+  spec.add_development_dependency 'rubocop', '~> 0.79.0'
+  spec.add_development_dependency 'rubocop-performance', '~> 1.5'
+  spec.add_development_dependency 'rubocop-rspec', '~> 1.37'
+  spec.add_development_dependency 'simplecov', '~> 0.17.1'
+  spec.add_development_dependency 'simplecov-console', '~> 0.6.0'
+  spec.add_development_dependency 'webmock', '~> 3.8'
 
-  spec.add_runtime_dependency 'indieweb-endpoints', '~> 1.1.0'
-  spec.add_runtime_dependency 'thor', '~> 0.20.3'
-  spec.add_runtime_dependency 'webmention-verification', '~> 1.1'
+  spec.add_runtime_dependency 'indieweb-endpoints', '~> 2.0'
+  spec.add_runtime_dependency 'thor', '~> 1.0'
+  spec.add_runtime_dependency 'webmention-verification', '~> 2.0'
 end
