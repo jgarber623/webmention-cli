@@ -13,6 +13,9 @@ Metrics/BlockLength:
     - webmention-cli.gemspec
     - spec/**/*.rb
 
+Naming/RescuedExceptionsVariableName:
+  PreferredName: exception
+
 Style/Documentation:
   Enabled: false
 
