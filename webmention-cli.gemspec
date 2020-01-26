@@ -38,5 +38,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'indieweb-endpoints', '~> 0.6.0'
   spec.add_runtime_dependency 'thor', '~> 0.20.3'
-  spec.add_runtime_dependency 'webmention-verification', '~> 1.1'
+  spec.add_runtime_dependency 'webmention-verification', '~> 2.0'
 end
