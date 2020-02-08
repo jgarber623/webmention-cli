@@ -19,7 +19,7 @@ describe Webmention::CLI::Commands::Verify, '#run' do
     end
 
     it 'raises a WebmentionVerificationError' do
-      expect { command.run }.to raise_error(Webmention::CLI::WebmentionVerificationError, 'connection error: Operation timed out')
+      expect { command.run }.to raise_error(Webmention::CLI::WebmentionVerificationError, /^connection error:/)
     end
   end
 end

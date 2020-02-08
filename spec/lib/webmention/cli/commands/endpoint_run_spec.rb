@@ -17,7 +17,7 @@ describe Webmention::CLI::Commands::Endpoint, '#run' do
     end
 
     it 'raises a WebmentionEndpointError' do
-      expect { command.run }.to raise_error(Webmention::CLI::WebmentionEndpointError, 'connection error: Operation timed out')
+      expect { command.run }.to raise_error(Webmention::CLI::WebmentionEndpointError, /^connection error:/)
     end
   end
 end
