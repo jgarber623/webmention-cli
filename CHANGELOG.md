@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 / 2020-04-17
+
+- Update webmention dependency (21695df)
+
 ## 1.0.0 / 2020-02-08
 
 - Rewrite gem code
