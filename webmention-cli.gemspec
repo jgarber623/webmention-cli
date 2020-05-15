@@ -37,7 +37,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'simplecov-console', '~> 0.7.2'
   spec.add_development_dependency 'webmock', '~> 3.8'
 
-  spec.add_runtime_dependency 'indieweb-endpoints', '~> 2.0'
+  spec.add_runtime_dependency 'indieweb-endpoints', '~> 3.0'
   spec.add_runtime_dependency 'thor', '~> 1.0'
   spec.add_runtime_dependency 'webmention', '~> 2.1'
   spec.add_runtime_dependency 'webmention-verification', '~> 2.0'
