@@ -24,8 +24,8 @@ Gem::Specification.new do |spec|
   spec.metadata['bug_tracker_uri'] = "#{spec.homepage}/issues"
   spec.metadata['changelog_uri']   = "#{spec.homepage}/blob/v#{spec.version}/CHANGELOG.md"
 
-  spec.add_runtime_dependency 'indieweb-endpoints', '~> 2.0'
+  spec.add_runtime_dependency 'indieweb-endpoints', '~> 3.0'
   spec.add_runtime_dependency 'thor', '~> 1.0'
-  spec.add_runtime_dependency 'webmention', '~> 2.1'
-  spec.add_runtime_dependency 'webmention-verification', '~> 2.0'
+  spec.add_runtime_dependency 'webmention', '~> 2.2'
+  spec.add_runtime_dependency 'webmention-verification', '~> 3.0'
 end
