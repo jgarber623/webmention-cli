@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0 / 2020-05/18
+
+- Update indieweb-endpoints, webmention, and webmention-verification gems (2ad2f78)
+- Move development dependencies to Gemfile per current Bundler conventions (434f785)
+- Update development Ruby version to 2.5.8 (1438a62)
+
 ## 1.1.0 / 2020-04-17
 
 - Update webmention dependency (21695df)
@@ -14,7 +20,7 @@
 
 ## 0.1.1 / 2019-01-03
 
-- Expand supported Ruby versions to include 2.6 (8930501
+- Expand supported Ruby versions to include 2.6 (8930501)
 
 ## 0.1.0 / 2018-08-14
 
