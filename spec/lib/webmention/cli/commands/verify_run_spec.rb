@@ -1,4 +1,4 @@
-describe Webmention::CLI::Commands::Verify, '#run' do
+RSpec.describe Webmention::CLI::Commands::Verify, '#run' do
   subject(:command) { described_class.new(source, target, strict) }
 
   let(:source) { 'https://source.example.com' }

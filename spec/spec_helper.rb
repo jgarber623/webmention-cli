@@ -1,6 +1,7 @@
-$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
-
+require 'bundler/setup'
 require 'simplecov'
 require 'webmock/rspec'
 
 require 'webmention/cli'
+
+RSpec.configure(&:disable_monkey_patching!)

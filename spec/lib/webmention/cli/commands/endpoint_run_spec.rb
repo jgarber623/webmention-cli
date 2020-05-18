@@ -1,4 +1,4 @@
-describe Webmention::CLI::Commands::Endpoint, '#run' do
+RSpec.describe Webmention::CLI::Commands::Endpoint, '#run' do
   subject(:command) { described_class.new(url) }
 
   let(:url) { 'https://example.com' }
