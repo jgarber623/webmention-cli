@@ -1,6 +1,10 @@
 # Changelog
 
-## 1.2.0 / 2020-05/18
+## 1.3.0 / 2020-05-26
+
+- Update webmention dependency (4540771)
+
+## 1.2.0 / 2020-05-18
 
 - Update indieweb-endpoints, webmention, and webmention-verification gems (2ad2f78)
 - Move development dependencies to Gemfile per current Bundler conventions (434f785)
