@@ -4,7 +4,7 @@
 
 [![Gem](https://img.shields.io/gem/v/webmention-cli.svg?style=for-the-badge)](https://rubygems.org/gems/webmention-cli)
 [![Downloads](https://img.shields.io/gem/dt/webmention-cli.svg?style=for-the-badge)](https://rubygems.org/gems/webmention-cli)
-[![Build](https://img.shields.io/travis/com/jgarber623/webmention-cli/master.svg?style=for-the-badge)](https://travis-ci.com/jgarber623/webmention-cli)
+[![Build](https://img.shields.io/travis/com/jgarber623/webmention-cli/main.svg?style=for-the-badge)](https://travis-ci.com/jgarber623/webmention-cli)
 [![Dependencies](https://img.shields.io/depfu/jgarber623/webmention-cli.svg?style=for-the-badge)](https://depfu.com/github/jgarber623/webmention-cli)
 [![Maintainability](https://img.shields.io/codeclimate/maintainability/jgarber623/webmention-cli.svg?style=for-the-badge)](https://codeclimate.com/github/jgarber623/webmention-cli)
 [![Coverage](https://img.shields.io/codeclimate/c/jgarber623/webmention-cli.svg?style=for-the-badge)](https://codeclimate.com/github/jgarber623/webmention-cli/code)
@@ -63,7 +63,7 @@ true
 
 ## Contributing
 
-Interested in helping improve webmention-cli? Awesome! Your help is greatly appreciated. See [CONTRIBUTING.md](https://github.com/jgarber623/webmention-cli/blob/master/CONTRIBUTING.md) for details.
+Interested in helping improve webmention-cli? Awesome! Your help is greatly appreciated. See [CONTRIBUTING.md](https://github.com/jgarber623/webmention-cli/blob/main/CONTRIBUTING.md) for details.
 
 ## Acknowledgments
 
