@@ -7,7 +7,7 @@ RSpec.describe Webmention::CLI::Commands::Endpoint, '#run' do
     let(:url) { 'foo' }
 
     it 'raises an ArgumentError' do
-      expect { command.run }.to raise_error(Webmention::CLI::ArgumentError, 'url must be an absolute URL (e.g. https://example.com)')
+      expect { command.run }.to raise_error(Webmention::CLI::ArgumentError, 'url (foo) must be an absolute URL (e.g. https://example.com)')
     end
   end
 
