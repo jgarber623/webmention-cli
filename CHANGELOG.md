@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0 / 2020-08-23
+
+- Update indieweb-endpoints and webmention dependencies (32bd719)
+
 ## 1.3.0 / 2020-05-26
 
 - Update webmention dependency (4540771)
