@@ -13,9 +13,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/jgarber623/webmention-cli'
   spec.license       = 'MIT'
 
-  spec.files         = Dir.chdir(File.expand_path(__dir__)) do
-    `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(bin|spec)/}) }
-  end
+  spec.files         = Dir['lib/**/*'].reject { |f| File.directory?(f) }
+  spec.files        += %w[LICENSE CHANGELOG.md CONTRIBUTING.md README.md]
+  spec.files        += %w[webmention-cli.gemspec]
 
   spec.bindir        = 'exe'
   spec.executables   = ['webmention']
