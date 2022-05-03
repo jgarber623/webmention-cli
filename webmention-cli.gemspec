@@ -21,8 +21,11 @@ Gem::Specification.new do |spec|
   spec.executables   = ['webmention']
   spec.require_paths = ['lib']
 
-  spec.metadata['bug_tracker_uri'] = "#{spec.homepage}/issues"
-  spec.metadata['changelog_uri']   = "#{spec.homepage}/blob/v#{spec.version}/CHANGELOG.md"
+  spec.metadata = {
+    'bug_tracker_uri' => "#{spec.homepage}/issues",
+    'changelog_uri' => "#{spec.homepage}/blob/v#{spec.version}/CHANGELOG.md",
+    'rubygems_mfa_required' => 'true'
+  }
 
   spec.add_runtime_dependency 'indieweb-endpoints', '~> 5.0'
   spec.add_runtime_dependency 'thor', '~> 1.1'
