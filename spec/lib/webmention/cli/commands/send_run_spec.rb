@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Webmention::CLI::Commands::Send, '#run' do
   subject(:command) { described_class.new(source, target) }
 
