@@ -13,10 +13,10 @@ module Webmention
         def run
           Webmention::Verification.verified?(@source, @target, strict: @strict)
         rescue Webmention::Verification::ArgumentError,
-               Webmention::Verification::InvalidURIError => exception
-          raise ArgumentError, exception
-        rescue Webmention::Verification::WebmentionVerificationError => exception
-          raise WebmentionVerificationError, exception
+               Webmention::Verification::InvalidURIError => e
+          raise ArgumentError, e
+        rescue Webmention::Verification::WebmentionVerificationError => e
+          raise WebmentionVerificationError, e
         end
       end
     end

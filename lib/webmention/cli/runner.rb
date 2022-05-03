@@ -16,8 +16,8 @@ module Webmention
         raise WebmentionEndpointError unless url
 
         say_success(url)
-      rescue Error => exception
-        say_failure(exception)
+      rescue Error => e
+        say_failure(e)
       end
 
       desc 'send <source> <target>', 'Send a webmention from <source> URL to <target> URL'
@@ -32,8 +32,8 @@ module Webmention
         raise WebmentionSendError, status unless status.success?
 
         say_success(response.code == 201 && location ? location : status)
-      rescue Error => exception
-        say_failure(exception)
+      rescue Error => e
+        say_failure(e)
       end
 
       desc 'verify <source> <target>', 'Verify <source> URL links to <target> URL'
@@ -44,8 +44,8 @@ module Webmention
         raise WebmentionVerificationError, verified unless verified
 
         say_success(verified)
-      rescue Error => exception
-        say_failure(exception)
+      rescue Error => e
+        say_failure(e)
       end
 
       desc '--version', 'Print version information'

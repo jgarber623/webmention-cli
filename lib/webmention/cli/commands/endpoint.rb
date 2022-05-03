@@ -11,10 +11,10 @@ module Webmention
         def run
           IndieWeb::Endpoints.get(@url)[:webmention]
         rescue IndieWeb::Endpoints::ArgumentError,
-               IndieWeb::Endpoints::InvalidURIError => exception
-          raise ArgumentError, exception
-        rescue IndieWeb::Endpoints::IndieWebEndpointsError => exception
-          raise WebmentionEndpointError, exception
+               IndieWeb::Endpoints::InvalidURIError => e
+          raise ArgumentError, e
+        rescue IndieWeb::Endpoints::IndieWebEndpointsError => e
+          raise WebmentionEndpointError, e
         end
       end
     end

@@ -12,10 +12,10 @@ module Webmention
         def run
           Webmention.send_mention(@source, @target)
         rescue Webmention::ArgumentError,
-               Webmention::InvalidURIError => exception
-          raise ArgumentError, exception
-        rescue Webmention::WebmentionClientError => exception
-          raise WebmentionSendError, exception
+               Webmention::InvalidURIError => e
+          raise ArgumentError, e
+        rescue Webmention::WebmentionClientError => e
+          raise WebmentionSendError, e
         end
       end
     end
