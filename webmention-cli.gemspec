@@ -1,7 +1,7 @@
 require_relative 'lib/webmention/cli/version'
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = Gem::Requirement.new('>= 2.5', '< 2.8')
+  spec.required_ruby_version = '>= 2.5', '< 2.8'
 
   spec.name          = 'webmention-cli'
   spec.version       = Webmention::CLI::VERSION
