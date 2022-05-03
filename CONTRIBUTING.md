@@ -8,9 +8,9 @@ There are a couple ways you can help improve webmention-cli:
 
 ## Getting Started
 
-webmention-cli is developed using Ruby 2.5.8 and is additionally tested against Ruby 2.6 and 2.7 using [CircleCI](https://app.circleci.com/pipelines/github/jgarber623/webmention-cli).
+webmention-cli is developed using Ruby 2.6.10 and is additionally tested against Ruby 2.7, 3.0, and 3.1 using [CircleCI](https://app.circleci.com/pipelines/github/jgarber623/webmention-cli).
 
-Before making changes to webmention-cli, you'll want to install Ruby 2.5.8. It's recommended that you use a Ruby version managment tool like [rbenv](https://github.com/rbenv/rbenv), [chruby](https://github.com/postmodern/chruby), or [rvm](https://github.com/rvm/rvm). Once you've installed Ruby 2.5.8 using your method of choice, install the project's gems by running:
+Before making changes to webmention-cli, you'll want to install Ruby 2.6.10. It's recommended that you use a Ruby version managment tool like [rbenv](https://github.com/rbenv/rbenv), [chruby](https://github.com/postmodern/chruby), or [rvm](https://github.com/rvm/rvm). Once you've installed Ruby 2.6.10 using your method of choice, install the project's gems by running:
 
 ```sh
 bundle install

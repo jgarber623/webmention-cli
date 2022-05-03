@@ -10,9 +10,9 @@
 
 ## Getting Started
 
-Before installing and using webmention-cli, you'll want to have [Ruby](https://www.ruby-lang.org) 2.5 (or newer) installed. It's recommended that you use a Ruby version managment tool like [rbenv](https://github.com/rbenv/rbenv), [chruby](https://github.com/postmodern/chruby), or [rvm](https://github.com/rvm/rvm).
+Before installing and using webmention-cli, you'll want to have [Ruby](https://www.ruby-lang.org) 2.6 (or newer) installed. It's recommended that you use a Ruby version managment tool like [rbenv](https://github.com/rbenv/rbenv), [chruby](https://github.com/postmodern/chruby), or [rvm](https://github.com/rvm/rvm).
 
-webmention-cli is developed using Ruby 2.5.8 and is additionally tested against Ruby 2.6 and 2.7 using [CircleCI](https://app.circleci.com/pipelines/github/jgarber623/webmention-cli).
+webmention-cli is developed using Ruby 2.6.10 and is additionally tested against Ruby 2.7, 3.0, and 3.1 using [CircleCI](https://app.circleci.com/pipelines/github/jgarber623/webmention-cli).
 
 ## Installation
 
