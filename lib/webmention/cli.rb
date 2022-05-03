@@ -6,14 +6,14 @@ require 'indieweb/endpoints'
 require 'webmention'
 require 'webmention/verification'
 
-require 'webmention/cli/version'
-require 'webmention/cli/exceptions'
+require_relative 'cli/version'
+require_relative 'cli/exceptions'
 
-require 'webmention/cli/commands/endpoint'
-require 'webmention/cli/commands/send'
-require 'webmention/cli/commands/verify'
+require_relative 'cli/commands/endpoint'
+require_relative 'cli/commands/send'
+require_relative 'cli/commands/verify'
 
-require 'webmention/cli/runner'
+require_relative 'cli/runner'
 
 module Webmention
   module CLI
