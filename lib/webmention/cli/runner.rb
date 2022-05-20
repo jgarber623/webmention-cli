@@ -7,66 +7,49 @@ module Webmention
 
       package_name 'Webmention'
 
-      map ['-v', '--version'] => :__version
+      map ['-v', '--version'] => :version
 
-      desc 'endpoint <target>', 'Discover Webmention endpoint for <target> URL'
+      # :nocov:
+      def self.exit_on_failure?
+        true
+      end
+      # :nocov:
+
+      desc 'endpoint <target>', 'Discover the Webmention endpoint for <target> URL'
       def endpoint(target)
-        url = Commands::Endpoint.new(target).run
+        url = Webmention::Url.new(target)
 
-        raise WebmentionEndpointError unless url
+        exit 1 unless url.webmention_endpoint?
 
-        say_success(url)
-      rescue Error => e
-        say_failure(e)
+        say url.webmention_endpoint
       end
 
       desc 'send <source> <target>', 'Send a webmention from <source> URL to <target> URL'
+      option :vouch, desc: 'Submit a <vouch> URL'
       def send(source, target)
-        response = Commands::Send.new(source, target).run
+        response = Webmention.send_webmention(source, target, vouch: options[:vouch])
 
-        raise WebmentionEndpointError unless response
+        exit 1 unless response.ok?
 
-        status = response.status
-        location = response.headers[:location]
+        code = response.code
+        location = response.headers['Location']
 
-        raise WebmentionSendError, status unless status.success?
+        say(code == 201 && location ? location : "#{code} #{response.reason}")
 
-        say_success(response.code == 201 && location ? location : status)
-      rescue Error => e
-        say_failure(e)
+        exit 1 unless code.between?(200, 299)
       end
 
-      desc 'verify <source> <target>', 'Verify <source> URL links to <target> URL'
-      option :strict, type: :boolean, desc: 'Enable or disable strict URL matching', default: true
+      desc 'verify <source> <target>', 'Verify that <source> URL links to <target> URL'
+      option :vouch, desc: 'Verify that <vouch> URL mentions the <source> URL domain'
       def verify(source, target)
-        verified = Commands::Verify.new(source, target, options[:strict]).run
+        verification = Webmention.verify_webmention(source, target, vouch: options[:vouch])
 
-        raise WebmentionVerificationError, verified unless verified
-
-        say_success(verified)
-      rescue Error => e
-        say_failure(e)
+        exit 1 unless verification.verified?
       end
 
-      desc '--version', 'Print version information'
-      def __version
+      desc 'version', 'Print version information'
+      def version
         say "webmention-cli version #{Webmention::CLI::VERSION}"
-      end
-
-      no_commands do
-        def say_failure(message)
-          say message, :red
-          exit 1
-        end
-
-        def say_success(message)
-          say message, :green
-          exit 0
-        end
-      end
-
-      def self.exit_on_failure?
-        true
       end
     end
   end
