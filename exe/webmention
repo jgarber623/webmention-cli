@@ -6,4 +6,4 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 require 'webmention/cli'
 
-Webmention::CLI.start
+Webmention::CLI::Runner.start
