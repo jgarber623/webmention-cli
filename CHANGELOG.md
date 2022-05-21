@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.0 / 2022-05-20
+
+- **Breaking change:** Rewrite gem code (35e9442)
+- **Breaking change:** Update minimum supported Ruby version to 2.6 (b8bca32)
+- Update maximum required Ruby version to < 4 (d5ca374)
+- Update development Ruby version to 2.6.10 (cd27f96)
+- Remove Reek (95096d0)
+
 ## 1.5.0 / 2020-08-23
 
 - Update indieweb-endpoints and webmention dependencies (209a75b)

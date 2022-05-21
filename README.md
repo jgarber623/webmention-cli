@@ -26,39 +26,54 @@ webmention-cli makes available the following commands:
 
 ### `webmention endpoint <target>`
 
-Discover the webmention endpoint for the given `<target>` URL using the [webmention-endpoint-ruby](https://github.com/jgarber623/webmention-endpoint-ruby) gem's endpoint discovery.
+Discover the Webmention endpoint for a `<target>` URL.
 
 ```sh
 $ webmention endpoint https://sixtwothree.org
 https://sixtwothree.org/webmentions
 ```
 
+The command returns a non-zero exit code if the `<target>` URL does not advertise a Webmention endpoint (or if an HTTP error was encountered).
+
 ### `webmention send <source> <target>`
 
-Send a webmention from `<source>` URL to the given `<target>` URL using the [webmention-client-ruby](https://github.com/indieweb/webmention-client-ruby) gem.
+Send a webmention from a `<source>` URL to a `<target>` URL.
 
 ```sh
 $ webmention send https://sixtwothree.org/posts/an-engineer-walks-into-a-design-sprint https://adactio.com/journal/6246
 202 Accepted
 ```
 
-The `send` command will return either an HTTP status _or_ the value of the response's `Location` header (if provided _and_ the response's HTTP status is `201 Created`).
+The command will return either an HTTP status _or_ the value of the response's `Location` header (if provided _and_ the response's HTTP status is `201 Created`).
+
+A non-zero exit code is returned if the HTTP status is _not_ within the 200 range (or if an HTTP error was encountered).
+
+#### Send a webmention with a vouch URL
+
+```sh
+$ webmention send https://sixtwothree.org/posts/now-accepting-webmentions https://aaronparecki.com --vouch https://adactio.com/links/9229
+202 Accepted
+```
+
+The command with a vouch URL included responds in the same fashion as noted above.
 
 ### `webmention verify <source> <target>`
 
-Confirm whether or not a `<source>` URL links to the given `<target>` URL using the [webmention-verification-ruby](https://github.com/jgarber623/webmention-verification-ruby) gem's verifers.
+Confirm whether or not a `<source>` URL links to a `<target>` URL.
 
 ```sh
 $ webmention verify https://kartikprabhu.com/notes/re-launching-franciscms https://sixtwothree.org/posts/launching-franciscms-onto-the-indieweb
-true
 ```
 
-By default, the `verify` command will strictly match URLs. For a bit more flexibility, use the `--no-strict` flag:
+The command will return a zero exit code if `<source>` links to `<target>` and a non-zero exit code in all other cases.
+
+#### Verify a webmention with a vouch URL
 
 ```sh
-$ webmention verify https://aaronparecki.com/2014/12/17/5/webmention-indieweb https://sixtwothree.org/posts/open-sourcing-my-webmention-service --no-strict
-true
+$ webmention verify https://kartikprabhu.com/notes/re-launching-franciscms https://sixtwothree.org/posts/launching-franciscms-onto-the-indieweb --vouch https://adactio.com/links/9229
 ```
+
+The command will return a zero exit code if `<source>` links to `<target>` _and_ the provided vouch URL links to the `<source>`'s domain. A non-zero exist code is returned in all other cases.
 
 ## Contributing
 
