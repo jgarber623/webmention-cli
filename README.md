@@ -4,7 +4,7 @@
 
 [![Gem](https://img.shields.io/gem/v/webmention-cli.svg?logo=rubygems&style=for-the-badge)](https://rubygems.org/gems/webmention-cli)
 [![Downloads](https://img.shields.io/gem/dt/webmention-cli.svg?logo=rubygems&style=for-the-badge)](https://rubygems.org/gems/webmention-cli)
-[![Build](https://img.shields.io/github/workflow/status/jgarber623/webmention-cli/CI?logo=github&style=for-the-badge)](https://github.com/jgarber623/webmention-cli/actions/workflows/ci.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/webmention-cli/ci.yml?branch=main&logo=github&style=for-the-badge)](https://github.com/jgarber623/webmention-cli/actions/workflows/ci.yml)
 [![Maintainability](https://img.shields.io/codeclimate/maintainability/jgarber623/webmention-cli.svg?logo=code-climate&style=for-the-badge)](https://codeclimate.com/github/jgarber623/webmention-cli)
 [![Coverage](https://img.shields.io/codeclimate/c/jgarber623/webmention-cli.svg?logo=code-climate&style=for-the-badge)](https://codeclimate.com/github/jgarber623/webmention-cli/code)
 
