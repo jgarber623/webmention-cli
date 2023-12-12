@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.0.0 / 2023-12-12
+
+- **Breaking change:** Update Thor and Webmention dependencies (#90) (b89a756)
+- Address RuboCop warnings (#89) (9a405bf)
+- Code cleanup (#88) (445984f)
+- **Breaking change:** Update Ruby versions (#87) (8a36cd3)
+  - Development: 2.7.8
+  - Minimum supported: 2.7
+
 ## 2.0.0 / 2022-05-20
 
 - **Breaking change:** Rewrite gem code (35e9442)
