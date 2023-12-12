@@ -5,19 +5,13 @@
 [![Gem](https://img.shields.io/gem/v/webmention-cli.svg?logo=rubygems&style=for-the-badge)](https://rubygems.org/gems/webmention-cli)
 [![Downloads](https://img.shields.io/gem/dt/webmention-cli.svg?logo=rubygems&style=for-the-badge)](https://rubygems.org/gems/webmention-cli)
 [![Build](https://img.shields.io/github/actions/workflow/status/jgarber623/webmention-cli/ci.yml?branch=main&logo=github&style=for-the-badge)](https://github.com/jgarber623/webmention-cli/actions/workflows/ci.yml)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/jgarber623/webmention-cli.svg?logo=code-climate&style=for-the-badge)](https://codeclimate.com/github/jgarber623/webmention-cli)
-[![Coverage](https://img.shields.io/codeclimate/c/jgarber623/webmention-cli.svg?logo=code-climate&style=for-the-badge)](https://codeclimate.com/github/jgarber623/webmention-cli/code)
-
-## Getting Started
-
-Before installing and using webmention-cli, you'll want to have [Ruby](https://www.ruby-lang.org) 2.6 (or newer) installed. It's recommended that you use a Ruby version managment tool like [rbenv](https://github.com/rbenv/rbenv), [chruby](https://github.com/postmodern/chruby), or [rvm](https://github.com/rvm/rvm).
-
-webmention-cli is developed using Ruby 2.6.10 and is additionally tested against Ruby 2.7, 3.0, and 3.1 using [GitHub Actions](https://github.com/jgarber623/webmention-cli/actions).
 
 ## Installation
 
+Before installing and using webmention-cli, you'll want to have [Ruby](https://www.ruby-lang.org) 2.7 (or newer) installed.
+
 ```sh
-gem install webmention-cli
+$ gem install webmention-cli
 ```
 
 ## Usage
@@ -74,10 +68,6 @@ $ webmention verify https://kartikprabhu.com/notes/re-launching-franciscms https
 ```
 
 The command will return a zero exit code if `<source>` links to `<target>` _and_ the provided vouch URL links to the `<source>`'s domain. A non-zero exist code is returned in all other cases.
-
-## Contributing
-
-Interested in helping improve webmention-cli? Awesome! Your help is greatly appreciated. See [CONTRIBUTING.md](https://github.com/jgarber623/webmention-cli/blob/main/CONTRIBUTING.md) for details.
 
 ## Acknowledgments
 
