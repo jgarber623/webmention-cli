@@ -30,5 +30,5 @@ Gem::Specification.new do |spec|
   }
 
   spec.add_runtime_dependency "thor", "~> 1.3"
-  spec.add_runtime_dependency "webmention", "~> 6.0"
+  spec.add_runtime_dependency "webmention", "~> 7.0"
 end
