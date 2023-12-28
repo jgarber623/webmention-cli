@@ -16,8 +16,8 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"].reject { |f| File.directory?(f) }
-  spec.files        += %w[LICENSE CHANGELOG.md README.md]
-  spec.files        += %w[webmention-cli.gemspec]
+  spec.files        += ["LICENSE", "CHANGELOG.md", "README.md"]
+  spec.files        += ["webmention-cli.gemspec"]
 
   spec.bindir        = "exe"
   spec.executables   = ["webmention"]
