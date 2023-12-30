@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.0.1 / 2023-12-30
+
+- Add `source_code_uri` to metadata (caf4022)
+
 ## 3.0.0 / 2023-12-12
 
 - **Breaking change:** Update Thor and Webmention dependencies (#90) (b89a756)
