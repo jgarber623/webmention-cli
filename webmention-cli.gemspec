@@ -30,6 +30,6 @@ Gem::Specification.new do |spec|
     "source_code_uri" => "#{spec.homepage}/tree/v#{spec.version}"
   }
 
-  spec.add_runtime_dependency "thor", "~> 1.3"
-  spec.add_runtime_dependency "webmention", "~> 7.0"
+  spec.add_dependency "thor", "~> 1.3"
+  spec.add_dependency "webmention", "~> 7.0"
 end
